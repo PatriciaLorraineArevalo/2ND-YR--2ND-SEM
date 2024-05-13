@@ -1,0 +1,18 @@
+rom random import choice
+game = ['Rock', 'Paper', 'Scissor']
+computer_player=choice(game)
+h=eval(input('How many times do you want to play?'))
+for i in range(h):
+ player_input=input('Type your choice:')
+ print(computer_player)
+ if computer_player==player_input:
+  print('its a tie.')
+  print('Both computer and player choose:',computer_player)
+ elif computer_player=='Rock' and player_input=='Scissor':
+  print('Player looses.')
+ elif computer_player=='Rock' and player_input=='Paper':
+  print('Player wins.')
+ elif computer_player=='Scissor' and player_input=='Rock':
+  print('Player wins.')
+ elif computer_player=='Paper' and player_input=='Scissor':
+  print('Player wins.')
