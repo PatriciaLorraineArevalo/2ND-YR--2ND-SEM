@@ -1,0 +1,25 @@
+print('-----------------Ar-Ei Restaurant---------------------------')
+print('                        Menu                       ')
+print('------------------------------------------------------------')
+print('          Code          Description          Price')
+print('            [1]         Menudo with Rice     P 90.00')
+print('            [2]         Kaldereta with Rice  P 100.00')
+print('            [3]         Sinigang with Rice   P 70.00')
+print('            [R]         Extra Rice           P 20.00')
+print('------------------------------------------------------------')
+code1=('Menudo with Rice')
+code2=('Kaldereta with Rice')
+code3=('Sinigang with Rice')
+R=('Extra Rice')
+x=eval(input('How many orders do you want to purchase?'))
+for i in range(x):
+ y=input('Type the code of your choice:')
+ z=eval(input('Type the quantity of your order:'))
+ if y=='1':
+  print(z,code1,z*90)
+ elif y=='2':
+  print(z,code2,z*100)
+ elif y=='3':
+  print(z,code3,z*70)
+ elif y=='R':
+  print(z,R,z)
