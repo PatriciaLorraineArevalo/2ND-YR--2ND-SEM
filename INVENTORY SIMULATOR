@@ -1,0 +1,65 @@
+from tabulate import tabulate
+Milk=5
+Mango=7
+Sugar=8
+Pearls=9
+v_Milk=5
+v_Mango=20
+v_Sugar=15
+v_Pearls=12
+mydata = [
+['Milk', Milk, 'liters',(Milk*v_Milk)],
+['Mango', Mango,'kilograms',(Mango*v_Mango)],
+['Sugar',Sugar,'kilograms',(Sugar*v_Sugar)],['Pearls',Pearls,'kilograms',(Pearls*v_Pearls)],
+]
+head = ["Item name", "Quantity","Unit of measure","Value"]
+print(tabulate(mydata, headers=head, tablefmt="grid"))
+f=eval(input('How many items are to add:'))
+for i in range(f):
+ n=input('code of items to add:')
+ if n=='Milk':
+  o=eval(input('No. of items to add:'))
+  Milk=(Milk)+(o)
+  mydata = [
+  ['Milk', Milk, 'liters',(Milk*v_Milk)],
+  ['Mango', Mango,'kilograms',(Mango*v_Mango)],
+  ['Sugar',Sugar,'kilograms',(Sugar*v_Sugar)],
+  ['Pearls',Pearls,'kilograms',(Pearls*v_Pearls)],
+  ]
+  head = ["Item name", "Quantity","Unit of measure","Value"]
+  print(tabulate(mydata, headers=head, tablefmt="grid"))
+ elif n=='Mango':
+  o=eval(input('No. of items to be added:'))
+  Mango=(Mango)+(o)
+  mydata = [
+  ['Milk', Milk, 'liters',(Milk*v_Milk)],
+  ['Mango', Mango,'kilograms',(Mango*v_Mango)],
+  ['Sugar',Sugar,'kilograms',(Sugar*v_Sugar)],
+  ['Pearls',Pearls,'kilograms',(Pearls*v_Pearls)],
+  ]
+  head = ["Item name", "Quantity","Unit of measure","Value"]
+  print(tabulate(mydata, headers=head, tablefmt="grid"))
+ elif n=='Sugar':
+  o=eval(input('No. of items to be added:'))
+  Sugar=(Sugar)+(o)
+  mydata = [
+  ['Milk', Milk, 'liters',(Milk*v_Milk)],
+  ['Mango', Mango,'kilograms',(Mango*v_Mango)],
+  ['Sugar',Sugar,'kilograms',(Sugar*v_Sugar)],
+  ['Pearls',Pearls,'kilograms',(Pearls*v_Pearls)],
+  ]
+  head = ["Item name", "Quantity","Unit of measure","Value"]
+  print(tabulate(mydata, headers=head, tablefmt="grid"))
+ elif n=='Pearls':
+  o=eval(input('No. of items to be added:'))
+  Pearls=(Pearls)+(o)
+  mydata = [
+  ['Milk', Milk, 'liters',(Milk*v_Milk)],
+  ['Mango', Mango,'kilograms',(Mango*v_Mango)],
+  ['Sugar',Sugar,'kilograms',(Sugar*v_Sugar)],
+  ['Pearls',Pearls,'kilograms',(Pearls*v_Pearls)],
+  ]
+  head = ["Item name", "Quantity","Unit of measure","Value"]
+  print(tabulate(mydata, headers=head, tablefmt="grid"))
+ else:
+  print('invalid item.')
