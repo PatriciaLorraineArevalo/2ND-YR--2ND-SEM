@@ -1,0 +1,35 @@
+print('Welcome to the Discount Calculator!')
+print(' ')
+print(' ')
+print(' ')
+purchase_amount=eval(input('Enter the purchase amount: P'))
+print(' ')
+
+while purchase_amount !=0:
+ coupon=input('Enter the coupon code (ABC123 for 10% off, XYZ789 for 20% off): ')
+ if coupon == 'ABC123':
+  discount=0.10*purchase_amount
+  print('Discount applied: P ',discount)
+  price=purchase_amount-discount
+  print('Discounted price: P ',price)
+  print(' ')
+  print(' ')
+  purchase_amount=eval(input('Enter the purchase amount: P'))
+  print(' ')
+ elif coupon == 'XYZ789':
+  discount=0.20*purchase_amount
+  print('Discount applied: P ',discount)
+  price=purchase_amount-discount
+  print('Discounted price: P ',price)
+  print(' ')
+  print(' ')
+  purchase_amount=eval(input('Enter the purchase amount: P'))
+  print(' ')
+ else:
+  print('Invalid coupon code. No discount applied.')
+  print(' ')
+  print(' ')
+  purchase_amount=eval(input('Enter the purchase amount: P'))
+  print(' ')
+else:
+ print('Program terminated.')
