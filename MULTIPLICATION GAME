@@ -1,0 +1,19 @@
+print('Welcome to multiplication game!')
+print('You need to answer 10 mutiplication questions.')
+from random import randint
+
+
+scores=0
+for x in range(1,11):
+    number1 = randint(1,10)
+    number2 = randint(1,10)
+    print("Question",x,":",str(number1)+" * "+str(number2))
+    answer=eval(input())
+    Answer=number1*number2
+    if(Answer==answer):
+        print("Right!")
+        scores+=1
+    else:
+        print(f"Wrong! The right answer is",Answer)
+    print("\n")
+print(f"Scores is {scores} /10")
