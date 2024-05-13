@@ -1,0 +1,7 @@
+x=eval(input("Type a number:"))
+y=eval(input("Type another number:"))
+z=eval(input("Type another number:"))
+total=x+y+z
+ave=total/3
+print("The total is", total)
+print("The average is", ave)
