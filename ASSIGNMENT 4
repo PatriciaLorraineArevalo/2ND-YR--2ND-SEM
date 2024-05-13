@@ -1,0 +1,5 @@
+x=eval(input("Enter the desired power:"))
+y=eval(input("choose how many digits you want:"))
+p=2**x
+d=p%(10**y)
+print("The last",y,"digit of 2 raised to",x,"is",d)
