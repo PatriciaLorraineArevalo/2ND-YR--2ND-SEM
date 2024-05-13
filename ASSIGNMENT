@@ -1,0 +1,17 @@
+n=eval(input('Enter a number(Encode 0 to teminate):'))
+s=0
+c=0
+
+while n !=0:
+ s+=n
+ c+=1
+ n=eval(input('Enter a number(Encode 0 to terminate):'))
+ 
+print('Total numbers of encoded numbers):', c)
+
+if c==0:
+ print('Enter any number:')
+else:
+ ave=s/c
+ print('The sum of encoded numbers:', s)
+ print('The average of encoded numbers:', ave)
