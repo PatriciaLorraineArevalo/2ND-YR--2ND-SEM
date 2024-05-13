@@ -1,0 +1,4 @@
+x=input("Enter your Name:")
+n=eval(input("Enter the desired times you want to print your name:"))
+for i in range(n):
+ print(x)
